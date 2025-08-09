@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAMMY'S AWARD PAGE</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Grammy Awards</h1>
+    <p>Welcome to the Grammy Awards page! Here you can find information about the prestigious music awards.</p>
+    <h2>Categories</h2>
+    <ul>
+        <li>Album of the Year</li>
+        <li>Record of the Year</li>
+        <li>Song of the Year</li>
+        <li>Best New Artist</li>
+        <li>Best Pop Solo Performance</li>
+    </ul>
+    <h2>Nominees for Album of the Year</h2>
+    <ol>
+        <li>Album 1 by Artist A</li>
+        <li>Album 2 by Artist B</li>
+        <li>Album 3 by Artist C</li>
+        <li>Album 4 by Artist D</li>
+        <li>Album 5 by Artist E</li>
+    </ol>
+    <h2>Nominees for Record of the Year</h2>  
+    <ol>
+        <li>Song 1 by Artist A</li>
+        <li>Song 2 by Artist B</li>
+        <li>Song 3 by Artist C</li>
+        <li>Song 4 by Artist D</li>
+        <li>Song 5 by Artist E</li>
+    </ol>
+    <h2>Nominees for Song of the Year</h2>
+    <ol>
+        <li>Album 1 by Artist A</li>
+        <li>Album 2 by Artist B</li>
+        <li>Album 3 by Artist C</li>
+        <li>Album 4 by Artist D</li>
+        <li>Album 5 by Artist E</li>
+    </ol>
+    <h2>Nominees for Best New Artist</h2>
+    <ol>
+        <li>Artist A</li>
+        <li>Artist B</li>
+        <li>Artist C</li>
+        <li>Artist D</li>
+        <li>Artist E</li>
+    </ol>
+    <table>
+      <caption>Grammy Awards Winners</caption>
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Category</th>
+          <th>Winner</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2000</td>
+          <td>Album of the Year</td>
+          <td>Album A</td>
+        </tr>
+        <tr>
+          <td>2001</td>
+          <td>Album of the Year</td>
+          <td>Album B</td>
+        </tr>
+        <tr>
+          <td>2002</td>
+          <td>Album of the Year</td>
+          <td>Album C</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <audio controls>
+        <source src="music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+    <video width="320" height="240" controls>
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  <h2>Nomination Form</h2>
+    <form action="submit_nomination.php" method="post">
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="category">Category:</label>
+      <select id="category" name="category">
+        <option value="album_of_the_year">Album of the Year</option>
+        <option value="record_of_the_year">Record of the Year</option>
+        <option value="song_of_the_year">Song of the Year</option>
+        <option value="best_new_artist">Best New Artist</option>
+      </select>
+      
+      <label for="nominee">Nominee Name:</label>
+      <input type="text" id="nominee" name="nominee" required>
+      
+      <button type="submit">Submit Nomination</button>
+    </form>
+    <h2>Feedback</h2>
+    <form action="submit_feedback.php" method="post">
+      <label for="feedback">Your Feedback:</label>
+      <textarea id="feedback" name="feedback" rows="4" cols="50"> </textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+  
+</body>
+</html>
